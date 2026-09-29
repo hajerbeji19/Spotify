@@ -1,0 +1,34 @@
+.sidebar {
+  padding: 24px;
+  background-color: #000;
+  height: 100%;
+}
+
+.logo img {
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.nav-menu {
+  margin-bottom: 24px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: #fff;
+}
+
+.nav-item .icon {
+  margin-right: 16px;
+  font-size: 20px;
+}

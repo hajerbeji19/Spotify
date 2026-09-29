@@ -1,0 +1,156 @@
+.player-empty {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b3b3b3;
+  background-color: #181818;
+  border-top: 1px solid #282828;
+}
+
+.player {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  background-color: #181818;
+  border-top: 1px solid #282828;
+}
+
+.player-left {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  min-width: 180px;
+}
+
+.now-playing-cover {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.now-playing-info {
+  margin-right: 16px;
+}
+
+.now-playing-info h4 {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.now-playing-info p {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.player-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  max-width: 722px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.control-btn {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.control-btn:hover {
+  color: #fff;
+}
+
+.play-pause-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.time {
+  font-size: 11px;
+  color: #a7a7a7;
+  min-width: 40px;
+  text-align: center;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #4d4d4d;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.progress {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.progress-bar:hover .progress {
+  background-color: #1db954;
+}
+
+.player-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+  gap: 12px;
+}
+
+.player-right .icon {
+  color: #b3b3b3;
+  font-size: 16px;
+}
+
+.volume-bar {
+  width: 100px;
+  height: 4px;
+  background-color: #4d4d4d;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.volume-progress {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+}
