@@ -2,11 +2,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: 16px clamp(16px, 3vw, 24px);
   background-color: rgba(18, 18, 18, 0.9);
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .nav-arrows {
+    gap: 8px;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .upgrade-btn,
+  .install-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .install-btn {
+    font-size: 0;
+  }
+
+  .install-btn i {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .upgrade-btn {
+    display: none;
+  }
 }
 
 .nav-arrows {

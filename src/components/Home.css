@@ -1,5 +1,5 @@
 .home {
-  padding: 24px;
+  padding: clamp(16px, 3vw, 24px);
   padding-bottom: 100px;
 }
 
@@ -7,6 +7,7 @@
   display: flex;
   gap: 8px;
   margin-bottom: 24px;
+  flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -41,16 +42,17 @@
 }
 
 .cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 24px;
-  flex-wrap: wrap;
 }
 
 .song-card {
   background-color: #181818;
   padding: 16px;
   border-radius: 8px;
-  width: 200px;
+  width: 100%;
+  min-width: 0;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -95,6 +97,47 @@
 .song-card:hover .play-button {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+  .home {
+    padding-bottom: 24px;
+  }
+
+  .category-section {
+    margin-bottom: 32px;
+  }
+
+  .category-section h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .song-card {
+    padding: 10px;
+  }
+
+  .card-image {
+    margin-bottom: 10px;
+  }
+
+  .play-button {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .song-card h4 {

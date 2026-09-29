@@ -4,6 +4,42 @@
   height: 100%;
 }
 
+@media (max-width: 700px) {
+  .sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px 12px;
+    border-top: 1px solid #282828;
+  }
+
+  .logo,
+  .sidebar .nav-menu:nth-of-type(2) {
+    display: none;
+  }
+
+  .sidebar .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    padding: 0;
+    font-size: 10px;
+  }
+
+  .nav-item .icon {
+    margin-right: 0;
+    font-size: 18px;
+  }
+}
+
 .logo img {
   height: 40px;
   margin-bottom: 30px;
